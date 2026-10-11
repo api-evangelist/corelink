@@ -1,23 +1,56 @@
 aid: corelink
+
 name: Corelink
-description: 'Corelink is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'CoreLink is a surgical device manufacturer specializing in the design and production of spinal implant systems. Founded in 2007, CoreLink designs and manufactures over 99% of its portfolio in-house, offering a broad range of cervical, lumbar, and minimally invasive spinal solutions. The company is based in St. Louis, Missouri and serves surgeons worldwide with integrated technology and training resources.'
+
 url: https://raw.githubusercontent.com/api-evangelist/corelink/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-11 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-10'
+
 modified: '2026-10-10'
+
 tags:
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/corelink-hosts.yml
+- type: Vendors
+  url: vendors/corelink-vendors.yml
+- type: DomainSecurity
+  url: security/corelink-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/corelink
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Corelink AI website provides no developer documentation or API reference.
+  evidence:
+    - url: https://corelink.ai/
+      status: 200
+  checked: '2026-10-11'
+x-enrichment:
+  date: '2026-10-11'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

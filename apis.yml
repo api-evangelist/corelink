@@ -36,8 +36,7 @@ common:
 - type: DomainSecurity
   url: security/corelink-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/corelink
-
+  url: https://corelink.ai/
 apis: []
 
 x-coverage:
